@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"href="style.css">
+	<link rel="stylesheet"href="styleForm.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+	<nav>
+		<div class="home"><a href="index.html">home</a></div>
+		<div><a href="news.html">News</a></div>
+		<div><a href="match.html">matches</a></div>	
+		<div><a href="competetion.html">competitions</a></div>
+		<div class="M"><a href="form.html">register</a></div>
+	</nav>
+	<article>
+		<!--form-->
+		<form class="registration" method="post" id="form">
+			<h1>👋 Welcome!</h1>
+			<label class="textfield">
+				<span>Frist name</span><input  class="in" id="user" type="text" required>
+			
+			</label>
+			<label class="textfield">
+				<span>Last name</span><input  class="in"type="text" id="user" required>
+			
+			</label>
+			<label class="textfield">
+				<span>Email</span><input  class="in"type="email" id="email" required>
+			
+			</label>
+			
+			<label class="textfield">
+				<span>Phone number</span><input  class="in" type="tel" id="phone" name="phone" placeholder=" 11 number"  required>
+			
+			</label>
+			
+			<label class="textfield">
+				<span>Adress</span><input  class="in"type="text"id="adress" required>
+			
+			</label>
+
+			<label class="textfield">
+				<span>Password</span><input   class="in" type="password"id="pass" required>
+			  
+			</label>
+			<label class="textfield">
+				<span>Repeat Password</span><input class="in" type="password"id="passre" required>
+			  
+			</label>
+			<span class="sa">Gender</span>
+			<label class="Radio">
+			  <input  id="male" type="radio" class="input" name="gender" value="male">
+			  <span>Male</span>
+			  <input  id="female" type="radio" class="input" name="gender" value="female" required>
+			  <span>Female</span>
+			</label>
+		  
+			<label class="check_box">
+			  <input type="checkbox"id="checkbox" required>
+			  <span>I agree to the <a href="" target="_blank" title="Actually not a Terms of Service">Terms of Service</a></span>
+			</label>
+		  
+			<input class="button-contained" type="submit" value="sign up">
+			<p id="error"></p>
+			<div class="done">
+			  <h1>👌 You're all set!</h1>
+			  <a class="text" href="javascript:window.location.reload(true)">Again</a>
+			</div>
+			<div class="progress">
+			  <progress class="pure-material-progress-circular" />
+			</div>
+		  </form>
+		  
+	</article>
+</div>
+<script src="jsForm.js"></script>
+</body>
+</html>
