@@ -4,4 +4,4 @@ landingPage.style.backgroundImage='url("k1.jpeg")';
 setInterval(() => {
     let randomNumber =Math.floor(Math.random()*imgArray.length);
     landingPage.style.backgroundImage='url('+imgArray[randomNumber]+')';
-},10000);
+},5000);
