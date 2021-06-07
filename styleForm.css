@@ -173,13 +173,13 @@ nav{
     }
     .registration > label {
         display: block;
-        width: 220px;
+        width: 270px;
     }
     .registration{
         padding: 10px;
     }
     label.textfield input{
-        width: 160px;
+        width: 200px;
     }
     label.Radio span{
         font-size: 20px;
