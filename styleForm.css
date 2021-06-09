@@ -1,4 +1,5 @@
 /* Material Customization */
+
 :root {
     --pure-material-primary-rgb: 255, 191, 0;
     --pure-material-onsurface-rgb: 0, 0, 0;
@@ -20,16 +21,13 @@ article {
     overflow: hidden;
     background-color: white;
 }
-label.textfield span{
+
+label.textfield span {
     display: block;
     margin: auto;
     text-align: center;
 }
-span.sa{
-    display: block;
-    margin: auto;
-    text-align: center;
-}
+
 h1 {
     margin: 32px 0;
     font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
@@ -37,12 +35,13 @@ h1 {
     text-align: center;
 }
 
-.registration > label {
+.registration>label {
     display: block;
-    margin: 24px  0;
+    margin: 24px 0;
     width: 520px;
 }
-input.in{
+
+input.in {
     display: block;
     margin: auto;
 }
@@ -66,20 +65,21 @@ button {
     background-color: white;
     visibility: hidden;
 }
-label.Radio{
+
+label.Radio {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .done {
     transition: visibility 0s 1s;
 }
 
-.signed > .done {
+.signed>.done {
     visibility: visible;
 }
 
-.done > a {
+.done>a {
     display: inline-block;
     text-decoration: none;
 }
@@ -88,14 +88,20 @@ label.Radio{
     opacity: 0;
 }
 
-.signed > .progress {
+.signed>.progress {
     animation: loading 4s;
 }
-.button-contained{
+
+.button-contained {
     display: block;
     margin: auto;
     text-align: center;
 }
+
+span.sa {
+    margin: 15px;
+}
+
 @keyframes loading {
     0% {
         visibility: visible;
@@ -113,75 +119,69 @@ label.Radio{
         opacity: 0;
     }
 }
-nav{
+
+nav {
     background-color: white;
-        color: black;
+    color: black;
 }
-@media only screen and (max-width: 900px) and (min-width: 600px)
-{
-    div.container{
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    div.container {
         flex-direction: row;
         position: relative;
     }
-    nav{
+    nav {
         position: absolute;
-        top:0;
+        top: 0;
         right: 0;
         flex-direction: column;
         order: 1;
         width: 25%;
         height: 200vh;
     }
-    nav div{
+    nav div {
         width: 100%;
         margin: 15px;
     }
-    article{
+    article {
         width: 75%;
         border-bottom: none;
     }
-    label.Radio{
-        justify-content: initial;
-        
+    .Radio {
+        justify-content: center;
     }
-    label.Radio input{
-        margin: 15px;;
+    .Radio {
+        margin: 15px;
+        ;
     }
-    .registration > label {
+    .registration>label {
         display: block;
-        margin: 24px  0;
+        margin: 24px 0;
         width: 420px;
     }
-
 }
+
 @media screen and (max-width:600px) {
-    nav{
+    nav {
         flex-direction: column;
     }
-    nav div{
+    nav div {
         width: 100%;
     }
-    article{
+    article {
         border-bottom: none;
     }
-    label.Radio{
-        justify-content: initial;
-        
-    }
-    label.Radio input{
-        margin: 15px;;
-    }
-    .registration > label {
+    .registration>label {
         display: block;
-        width: 270px;
+        width: 220px;
     }
-    .registration{
+    .registration {
         padding: 10px;
     }
-    label.textfield input{
-        width: 200px;
+    label.textfield input {
+        width: 160px;
     }
-    label.Radio span{
+    label.Radio span {
         font-size: 20px;
     }
 }
